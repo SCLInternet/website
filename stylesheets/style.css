@@ -1,0 +1,63 @@
+/*
+Error: File to import not found or unreadable: breakpoint.
+       Load paths:
+         Compass::SpriteImporter
+         /home/dan/Projects/Websites/scl/httpdocs/sass
+         /var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets
+        on line 13 of /home/dan/Projects/Websites/scl/httpdocs/sass/style.scss
+
+8: License: Not for use by anyone except Nuclear Ape personell
+9: Text Domain: the_na_theme
+10: *\/
+11: 
+12: // Reqs
+13: @import "breakpoint";
+14: @import 'singularitygs';
+15: @import 'compass';
+16: 
+17: // The Nuclear Ape Theme
+18: @import "variable/**";
+
+Backtrace:
+/home/dan/Projects/Websites/scl/httpdocs/sass/style.scss:13
+/var/lib/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/var/lib/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/import_node.rb:45:in `import'
+/var/lib/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/import_node.rb:28:in `imported_file'
+/var/lib/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/import_node.rb:37:in `css_import?'
+/var/lib/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
+/var/lib/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/var/lib/gems/2.1.0/gems/sass-3.4.17/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/2.1.0/gems/sass-3.4.17/lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/2.1.0/gems/sass-3.4.17/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/var/lib/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/var/lib/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/visitors/base.rb:52:in `map'
+/var/lib/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/var/lib/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/var/lib/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/var/lib/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/var/lib/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/var/lib/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/var/lib/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/var/lib/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/var/lib/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/root_node.rb:36:in `css_tree'
+/var/lib/gems/2.1.0/gems/sass-3.4.17/lib/sass/tree/root_node.rb:20:in `render'
+/var/lib/gems/2.1.0/gems/sass-3.4.17/lib/sass/engine.rb:278:in `render'
+/var/lib/gems/2.1.0/gems/sass-3.4.17/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/var/lib/gems/2.1.0/gems/sass-3.4.17/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/var/lib/gems/2.1.0/gems/sass-3.4.17/lib/sass/plugin/compiler.rb:209:in `each'
+/var/lib/gems/2.1.0/gems/sass-3.4.17/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/var/lib/gems/2.1.0/gems/sass-3.4.17/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+/var/lib/gems/2.1.0/gems/sass-3.4.17/lib/sass/plugin/compiler.rb:328:in `block in watch'
+/usr/lib/ruby/vendor_ruby/listen/listener.rb:150:in `call'
+/usr/lib/ruby/vendor_ruby/listen/listener.rb:150:in `block in _wait_for_changes'
+/usr/lib/ruby/vendor_ruby/listen/listener.rb:145:in `loop'
+/usr/lib/ruby/vendor_ruby/listen/listener.rb:145:in `_wait_for_changes'
+/usr/lib/ruby/vendor_ruby/listen/listener.rb:43:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: breakpoint.\A        Load paths:\A          Compass::SpriteImporter\A          /home/dan/Projects/Websites/scl/httpdocs/sass\A          /var/lib/gems/2.1.0/gems/compass-core-1.0.3/stylesheets\A         on line 13 of /home/dan/Projects/Websites/scl/httpdocs/sass/style.scss\A \A 8: License: Not for use by anyone except Nuclear Ape personell\A 9: Text Domain: the_na_theme\A 10: */\A 11: \A 12: // Reqs\A 13: @import \"breakpoint\";\A 14: @import 'singularitygs';\A 15: @import 'compass';\A 16: \A 17: // The Nuclear Ape Theme\A 18: @import \"variable/**\";"; }

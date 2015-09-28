@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SCL - Domain Default Page</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link href='http://fonts.googleapis.com/css?family=Marck+Script|Contrail+One|Architects+Daughter|Francois+One' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+
+<audio preload="auto" class="sound">
+  <source src="img/robot-boot2.mp3" type="audio/mp3" />
+  <source src="img/robot-boot2.ogg" type="audio/ogg" />
+  Your browser does not support the audio element.-->
+</audio>
+
+<audio preload="auto" class="roobotoff">
+  <source src="img/robot-off.mp3" type="audio/mp3" />
+  <source src="img/robot-off.ogg" type="audio/ogg" />
+  Your browser does not support the audio element.-->
+</audio>
+
+
+    <div id="wrap">
+<script type="text/javascript">
+jQuery(function(){
+		 $(".img-swap").live('click', function() {
+		 	if ($(this).attr("class") == "img-swap") {
+			this.src = this.src.replace("_off","_on");
+			$("#tooltip0").hide();
+			$("#tooltip0").html("<p>&quot;noooooooo...&quot;</p>");
+			//$(".sound").play();
+			document.getElementsByTagName("audio")[0].play();
+			} else {
+			this.src = this.src.replace("_on","_off");
+			$("#tooltip0").hide();
+			$("#tooltip0").html("<p>&quot;po..we...errr.....&quot;</p>");
+			document.getElementsByTagName("audio")[1].play();
+			}
+			$(this).toggleClass("on");
+		});
+});
+</script>    
+    	<div id="robot">
+            <a href="#" title="&quot;c..li..ck... me..&quot;"><img src="img/robot_off.gif" class="img-swap"/></a>
+        </div>
+<script type="text/javascript">
+function simple_tooltip(target_items, name){
+ $(target_items).each(function(i){
+		$("body").append("<div class='"+name+"' id='"+name+i+"'><p>"+$(this).attr('title')+"</p></div>");
+		var my_tooltip = $("#"+name+i);
+
+		$(this).removeAttr("title").mouseover(function(){
+				my_tooltip.css({opacity:0.8, display:"none"}).fadeIn(400);
+		}).mousemove(function(kmouse){
+				my_tooltip.css({left:kmouse.pageX+15, top:kmouse.pageY+15});
+		}).mouseout(function(){
+				my_tooltip.fadeOut(400);
+		});
+	});
+}
+$(document).ready(function(){
+	 simple_tooltip("a","tooltip");
+});
+</script>
+    	<div id="head">
+        <h1 class="france clear">If you can see this page, the website - 
+<script type="text/javascript">
+  //<![CDATA[
+	document.write('<a href="http://' + (location.hostname.indexOf(':')>=0?'['+location.hostname+']':location.hostname) + '">' + location.hostname + '</a>');
+  //]]>
+</script>
+        is not available at the moment.</h1>
+        </div>
+        <div id="page">
+        <p class="contrail first">If you own this website you are probably seeing this page because you've just bought it and haven't uploaded any content yet.</p>
+        <p class="contrail boxed-in">...if this page is an issue and you need to talk to us then get in touch and just say: "Hi, I've got the SCL robot page where my site should be..."</p>
+
+        <h2 class="france center">A bit of help to get you started</h2>
+        
+        <div id="question" class="q1">
+        	<div class="qhead">
+                <h3 class="contrail">Q. Yeh I have just bought this page... What next???</h3>
+            </div>
+        <p class="france">A. Well this is your blank canvas. Upload your files to /httpdocs and you're away! Have fun and we wish you the best of luck with your new site.</p>
+        </div>
+        
+        <div id="question" class="q2">
+        	<div class="qhead">
+		        <h3 class="contrail">Q. Umm... I'm stuck, I need help!</h3>
+            </div>
+        <p class="france">A. Don't worry, we know how it can get a bit confusing sometimes. SCL Internet provide a full range of services to help you out. We have in-house designers and programmers ready to help you get the site you want.</p>
+        </div>
+        
+        <div id="question" class="q3">
+          	<div class="qhead">
+                <h3 class="contrail">Q. Brilliant, I'm going to need your help... How do I get in contact?</h3>
+        	</div>
+        <p class="france">A. Whether you only need a little bit of help with your code, you need a few graphics drawn up or any other reason, please get in touch:
+            <ul>
+                <li>Through our <a href="http://www.scl.co.uk/contactus/" title="SCL contact form">contact form</a></li>
+                <li>Drop us an <a href="mailto:info@scl.co.uk" title="email scl">email</a></li>
+            </ul>
+        </p>  
+        </div>
+        <div class="clear"></div>
+        <h2 class="france center foot">Don't forget, we're here to help you get the most out of your site.</h2>
+        </div>
+    </div>
+</body>
+</html>

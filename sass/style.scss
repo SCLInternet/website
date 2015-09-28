@@ -1,0 +1,26 @@
+/*
+Theme Name: The Nuclear Ape Theme
+Theme URI: http://www.nuclear-ape.com
+Author: Hanuman Hook, Dan Conway
+Author URI: http://www.nuclear-ape.com
+Description: The best theme the world has seen
+Version: 1.0.0
+License: Not for use by anyone except Nuclear Ape personell
+Text Domain: the_na_theme
+*/
+
+// Reqs
+@import "breakpoint";
+@import 'singularitygs';
+@import 'compass';
+
+// The Nuclear Ape Theme
+@import "variable/**";
+@import "bass/**";
+@import "realm/**";
+@import "navigation/**";
+@import "template/**";
+@import "page/**";
+
+// Vendor
+@import "vendor/**";
